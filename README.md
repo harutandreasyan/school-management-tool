@@ -7,21 +7,21 @@ This is a web application for managing school data. The project is developed usi
 ## Installing and running the project locally
 git clone https://github.com/harutandreasyan/school-management-tool.git
 
-### Backend
+## Backend
 cd school-management-tool/backend  <br>
 npm install
 
-## Create a .env file in the backend directory with the following content (adjust values as needed) 
+### Create a .env file in the backend directory with the following content (adjust values as needed) 
 DATABASE_URL="mysql://user:password@localhost:3306/sc_task"  <br>
 JWT_SECRET="mySuperSecretKey"  <br>
 PORT=4000
 
-## Run database migrations and seed the database
+### Run database migrations and seed the database
 npx prisma migrate dev --name init <br>
 npm run seed  <br>
 npm run dev 
 
-### Frontend 
+## Frontend 
 cd school-management-tool/frontend  <br>
 npm install  <br>
 npm run dev  
