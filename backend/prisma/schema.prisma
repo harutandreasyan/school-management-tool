@@ -1,0 +1,45 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  ADMIN
+  TEACHER
+  PUPIL
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+  role     Role
+}
+
+model Teacher {
+  id       Int       @id @default(autoincrement())
+  name     String
+  surname  String
+  subjects Subject[]
+}
+
+model Subject {
+  id         Int       @id @default(autoincrement())
+  name       String
+  teacherId  Int
+  teacher    Teacher   @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  pupils     Pupil[]
+  grade      Int
+}
+
+model Pupil {
+  id       Int       @id @default(autoincrement())
+  name     String
+  surname  String
+  grade    Int
+  subjects Subject[]
+}
