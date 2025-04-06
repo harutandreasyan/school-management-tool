@@ -24,4 +24,9 @@ npm run dev
 ## Frontend 
 cd school-management-tool/frontend  <br>
 npm install  <br>
-npm run dev  
+npm run dev  <br> <br>
+
+Initial login: admin <br>
+Initial password: adminpassword
+
+
