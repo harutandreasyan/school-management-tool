@@ -18,10 +18,10 @@ PORT=4000
 
 ## Run database migrations and seed the database
 npx prisma migrate dev --name init <br>
-npm run seed
-npm run dev
+npm run seed  <br>
+npm run dev 
 
 ### Frontend 
-cd school-management-tool/frontend
-npm install
-npm run dev
+cd school-management-tool/frontend  <br>
+npm install  <br>
+npm run dev  
