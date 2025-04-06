@@ -17,7 +17,7 @@ JWT_SECRET="mySuperSecretKey"
 PORT=4000
 
 ## Run database migrations and seed the database
-npx prisma migrate dev --name init
+npx prisma migrate dev --name init <br>
 npm run seed
 npm run dev
 
