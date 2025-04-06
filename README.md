@@ -8,12 +8,12 @@ This is a web application for managing school data. The project is developed usi
 git clone https://github.com/harutandreasyan/school-management-tool.git
 
 ### Backend
-cd school-management-tool/backend
+cd school-management-tool/backend  <br>
 npm install
 
 ## Create a .env file in the backend directory with the following content (adjust values as needed) 
-DATABASE_URL="mysql://user:password@localhost:3306/sc_task"
-JWT_SECRET="mySuperSecretKey"
+DATABASE_URL="mysql://user:password@localhost:3306/sc_task"  <br>
+JWT_SECRET="mySuperSecretKey"  <br>
 PORT=4000
 
 ## Run database migrations and seed the database
