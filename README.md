@@ -5,7 +5,7 @@ This is a web application for managing school data. The project is developed usi
 - **Frontend:** React.js, Apollo Client, Material UI, Vite
 
 ## Installing and running the project locally
-git clone https://github.com/your-username/school-management-tool.git
+git clone https://github.com/harutandreasyan/school-management-tool.git
 
 ### Backend
 cd school-management-tool/backend
