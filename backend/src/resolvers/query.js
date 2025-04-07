@@ -1,4 +1,3 @@
-// src/resolvers/query.js
 export const Query = {
 	me: async (_, __, { user, prisma }) => {
 		if (!user) throw new Error('Not authenticated')
