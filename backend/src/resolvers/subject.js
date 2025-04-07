@@ -1,4 +1,3 @@
-// src/resolvers/subject.js
 export const Subject = {
 	teacher: async (parent, _, { prisma }) => {
 		return prisma.teacher.findUnique({ where: { id: parent.teacherId } })
