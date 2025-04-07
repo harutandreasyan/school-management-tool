@@ -1,4 +1,3 @@
-// src/resolvers/pupil.js
 export const Pupil = {
 	subjects: async (parent, _, { prisma }) => {
 		return prisma.subject.findMany({
